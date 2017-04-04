@@ -79,45 +79,51 @@
         android:layout_marginBottom="0dp"
         android:progressDrawable="@drawable/custom_progress_blue"/>
 
-    <TextView
+    <EditText
         android:id="@+id/tvRed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
-        android:minEms="2"
         android:background="#f00"
-        android:text="TextView"
+        android:ems="2"
+        android:hint="000"
+        android:inputType="number"
+        android:textAlignment="center"
         android:textColor="#fff"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/tvGreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
-        android:minEms="2"
+        android:layout_marginTop="4dp"
         android:background="#0f0"
-        android:text="TextView"
+        android:ems="2"
+        android:hint="000"
+        android:inputType="number"
+        android:textAlignment="center"
         android:textColor="#fff"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvRed" />
 
-    <TextView
+    <EditText
         android:id="@+id/tvBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
-        android:minEms="2"
+        android:layout_marginTop="4dp"
         android:background="#00f"
-        android:text="TextView"
+        android:ems="2"
+        android:hint="000"
+        android:inputType="number"
+        android:textAlignment="center"
         android:textColor="#fff"
         android:textSize="24sp"
         android:textStyle="bold"
