@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     private TextView tvGreen;
     private TextView tvBlue;
     private boolean byUser = true;
+    private boolean userIsCurrentlyScrolling = false;
 
 
     @Override
@@ -60,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+        this.userIsCurrentlyScrolling = fromUser;
         int rgb = Color.rgb(sbRed.getProgress(),sbGreen.getProgress(),sbBlue.getProgress());
         int rgbRed = Color.rgb(sbRed.getProgress(),127,127);
         int rgbGreen = Color.rgb(255,sbGreen.getProgress(),255);
